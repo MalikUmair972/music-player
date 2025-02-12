@@ -1,0 +1,81 @@
+.player-container {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  
+    .album-art {
+      margin: 20px auto;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      animation: spin 10s linear infinite;
+  
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+    .song-info {
+      margin: 20px 0;
+  
+      h2 {
+        font-size: 24px;
+        margin: 0;
+      }
+  
+      p {
+        font-size: 16px;
+        margin: 5px 0;
+      }
+    }
+  
+    .controls {
+      margin: 20px 0;
+  
+      .btn {
+        margin: 0 10px;
+        font-size: 20px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+  
+        &:hover {
+          transform: scale(1.1);
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+  
+    .progress-bar {
+      width: 100%;
+      height: 5px;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 5px;
+      overflow: hidden;
+  
+      .progress {
+        height: 100%;
+        background-color: #fff;
+        transition: width 0.5s linear;
+      }
+    }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

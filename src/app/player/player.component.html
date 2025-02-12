@@ -1,0 +1,21 @@
+<div class="player-container rounded-0 h-75">
+    <div class="album-art">
+        <img [src]="currentSong.albumArt" alt="Album Art" class="img-fluid rounded-circle spin-animation">
+    </div>
+    <div class="song-info">
+        <h2>{{ currentSong.title }}</h2>
+        <p>{{ currentSong.artist }}</p>
+    </div>
+    <div class="controls">
+
+        <button class="btn btn-primary" (click)="prevSong()">
+            <mat-icon>skip_previous</mat-icon></button>
+        <button class="btn btn-dark" (click)="togglePlay()">
+            <mat-icon>{{ isPlaying ? 'pause' : 'play_arrow' }}</mat-icon>
+        </button>
+        <button class="btn btn-primary" (click)="nextSong()"> <mat-icon>skip_next</mat-icon></button>
+    </div>
+    <div class="progress-bar">
+        <div class="progress" [style.width.%]="progress"></div>
+    </div>
+</div>
