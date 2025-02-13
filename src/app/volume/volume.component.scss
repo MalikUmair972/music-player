@@ -1,0 +1,14 @@
+mat-slider {
+    width: 300px;
+  }
+
+  ::ng-deep mat-slider {
+    --mdc-slider-handle-color : blue !important;
+    --mdc-slider-focus-handle-color : blue !important;
+    --mdc-slider-inactive-track-color: #000000 !important;
+    --mdc-slider-active-track-color: #000 !important
+  }
+  ::ng-deep .mat-mdc-slider-visual-thumb .mat-ripple {
+    display: none !important; /* Ripple remove */
+  }
+  
