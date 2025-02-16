@@ -1,5 +1,12 @@
-<section class="bg-dark h-75">
-    <div class="container">
-
-    </div>
-</section>
+<div class="playlist">
+    <h3>My Playlist</h3>
+    <ul>
+      <li *ngFor="let song of songs">  <!-- ✅ Proper loop -->
+        <p>{{ song.name }}</p>
+        <audio controls>
+          <source [src]="song.url" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </li>
+    </ul>
+</div>

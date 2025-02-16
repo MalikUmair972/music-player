@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-playlist',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './playlist.component.scss'
 })
 export class PlaylistComponent {
-
+  @Input() songs: any[] = [];
 }
