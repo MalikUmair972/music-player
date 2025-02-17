@@ -1,3 +1,8 @@
+.volume {
+position: absolute;
+top: 56%;
+right: 15%;
+
 mat-slider {
     width: 300px;
   }
@@ -5,10 +10,12 @@ mat-slider {
   ::ng-deep mat-slider {
     --mdc-slider-handle-color : blue !important;
     --mdc-slider-focus-handle-color : blue !important;
-    --mdc-slider-inactive-track-color: #000000 !important;
-    --mdc-slider-active-track-color: #000 !important
+    --mdc-slider-inactive-track-color: #ffffff !important;
+    --mdc-slider-active-track-color: #ffffff !important
   }
   ::ng-deep .mat-mdc-slider-visual-thumb .mat-ripple {
-    display: none !important; /* Ripple remove */
+    display: none !important; 
   }
-  
+
+
+}
